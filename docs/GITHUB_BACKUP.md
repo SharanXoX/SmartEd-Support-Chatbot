@@ -19,11 +19,24 @@ Open PowerShell in this folder:
 cd "C:\Users\Sharan\OneDrive\Desktop\smarted support"
 ```
 
-Replace `YOUR_USERNAME` and `YOUR_REPO` with your GitHub username and repo name:
+This project is published at:
+
+**https://github.com/SharanXoX/SmartEd-Support-Chatbot**
+
+To push updates after you change code:
+
+```powershell
+cd "C:\Users\Sharan\OneDrive\Desktop\smarted support"
+git add -A
+git commit -m "Describe your change"
+git push
+```
+
+First-time setup (already done on this machine):
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git remote add origin https://github.com/SharanXoX/SmartEd-Support-Chatbot.git
 git push -u origin main
 ```
 
@@ -34,8 +47,8 @@ GitHub may ask you to sign in (browser or personal access token).
 **On any computer:**
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/SharanXoX/SmartEd-Support-Chatbot.git
+cd SmartEd-Support-Chatbot
 ```
 
 Then restore secrets locally (never commit these):
