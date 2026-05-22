@@ -1,0 +1,18 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Open the **Assignments** section from the sidebar.",
+    "open_url": "/demo/assignments",
+    "auto_navigate": true
+  },
+  {
+    "image": "step2.png",
+    "text": "Select the assignment that's due and review the instructions.",
+    "open_url": "/demo/assignments"
+  },
+  {
+    "image": "step3.png",
+    "text": "Click **Upload** or **Submit**, attach your file, and confirm submission.",
+    "open_url": "/demo/assignment-upload"
+  }
+]

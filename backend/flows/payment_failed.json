@@ -1,0 +1,27 @@
+{
+  "intent": "payment_failed",
+  "keywords": [
+    "payment failed",
+    "payment declined",
+    "card declined",
+    "transaction failed",
+    "billing error",
+    "charge failed"
+  ],
+  "intro": "Let’s troubleshoot a failed payment:",
+  "steps": [
+    {
+      "text": "Confirm your billing profile shows the correct card and expiry date.",
+      "image": "/demo-assets/payments/step1.png"
+    },
+    {
+      "text": "Retry using another browser window or temporarily disable aggressive card-blocking extensions.",
+      "image": "/demo-assets/payments/step2.png"
+    },
+    {
+      "text": "If money left your bank but access didn’t update, grab your receipt reference and open a billing ticket.",
+      "image": "/demo-assets/payments/step3.png"
+    }
+  ],
+  "suggested_replies": ["Money was deducted", "Which receipt reference do you need?"]
+}

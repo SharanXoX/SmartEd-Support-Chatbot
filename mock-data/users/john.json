@@ -1,0 +1,25 @@
+{
+  "id": "john-001",
+  "student_id": "john-001",
+  "name": "John",
+  "email": "john.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "new",
+  "purchases": [],
+  "courses": [],
+  "progress": {},
+  "certificates": [],
+  "exams": [],
+  "upcomingExams": [],
+  "announcements": [
+    {
+      "id": "ann-welcome",
+      "title": "Welcome to SmartEd Learn",
+      "date": "May 20, 2026",
+      "content": "Browse the course catalog and enroll to get started. Use Help or the assistant if you need guidance."
+    }
+  ],
+  "recentActivity": [
+    { "id": "a1", "text": "Account created — complete your profile", "at": "Today" }
+  ]
+}

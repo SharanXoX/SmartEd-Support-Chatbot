@@ -1,0 +1,9 @@
+{
+  "default_student_id": "demo-001",
+  "students": [
+    { "id": "demo-001", "file": "alex.json", "name": "Alex", "profile_type": "beginner" },
+    { "id": "demo-002", "file": "jordan.json", "name": "Jordan", "profile_type": "advanced" },
+    { "id": "demo-003", "file": "sam.json", "name": "Sam", "profile_type": "overdue" },
+    { "id": "demo-004", "file": "riley.json", "name": "Riley", "profile_type": "graduate" }
+  ]
+}

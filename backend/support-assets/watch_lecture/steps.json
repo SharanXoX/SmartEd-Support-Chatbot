@@ -1,0 +1,17 @@
+[
+  {
+    "image": "step1.png",
+    "text": "From the dashboard, use **Continue Learning** or open **My Courses**.",
+    "open_url": "/demo/dashboard"
+  },
+  {
+    "image": "step2.png",
+    "text": "Open your course and select the current module or lesson.",
+    "open_url": "/demo/courses"
+  },
+  {
+    "image": "step3.png",
+    "text": "Press **Play** on the lecture video. You can pause and resume anytime.",
+    "open_url": "/demo/courses"
+  }
+]

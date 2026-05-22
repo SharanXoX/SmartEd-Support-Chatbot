@@ -1,0 +1,97 @@
+{
+  "id": "priya-001",
+  "student_id": "priya-001",
+  "name": "Priya",
+  "email": "priya.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "advanced",
+  "purchases": [
+    { "id": "p1", "course_id": "PY101", "courseTitle": "Python Fundamentals", "purchasedAt": "Sep 8, 2025", "price": "$59.00" },
+    { "id": "p2", "course_id": "DS201", "courseTitle": "Data Science Essentials", "purchasedAt": "Jan 20, 2026", "price": "$79.00" },
+    { "id": "p3", "course_id": "BIO101", "courseTitle": "Introduction to Biology", "purchasedAt": "Oct 1, 2025", "price": "$49.00" },
+    { "id": "p4", "course_id": "UX101", "courseTitle": "UI/UX Basics (Premium)", "purchasedAt": "Mar 5, 2026", "price": "$89.00" }
+  ],
+  "courses": [
+    {
+      "id": "PY101",
+      "title": "Python Fundamentals",
+      "instructor": "Prof. Rivera",
+      "progress_pct": 100,
+      "next_module": "Completed",
+      "next_due": "—",
+      "completed": true
+    },
+    {
+      "id": "BIO101",
+      "title": "Introduction to Biology",
+      "instructor": "Dr. Chen",
+      "progress_pct": 100,
+      "next_module": "Completed",
+      "next_due": "—",
+      "completed": true
+    },
+    {
+      "id": "DS201",
+      "title": "Data Science Essentials",
+      "instructor": "Dr. Patel",
+      "progress_pct": 88,
+      "next_module": "Capstone project",
+      "next_due": "Final submission — June 12",
+      "completed": false
+    },
+    {
+      "id": "UX101",
+      "title": "UI/UX Basics",
+      "instructor": "Morgan Lee",
+      "progress_pct": 76,
+      "next_module": "Usability testing",
+      "next_due": "Peer review — Friday",
+      "completed": false
+    }
+  ],
+  "progress": { "PY101": 100, "BIO101": 100, "DS201": 88, "UX101": 76 },
+  "certificates": [
+    { "id": "cert-py", "course_id": "PY101", "course_title": "Python Fundamentals", "issued_at": "Apr 15, 2026" },
+    { "id": "cert-bio", "course_id": "BIO101", "course_title": "Introduction to Biology", "issued_at": "Apr 28, 2026" }
+  ],
+  "exams": [
+    {
+      "id": "ex-ds-final",
+      "title": "Data Science Final",
+      "course_id": "DS201",
+      "course": "Data Science Essentials",
+      "date": "June 18, 2026 · 9:00 AM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-ux-final",
+      "title": "UI/UX Final Quiz",
+      "course_id": "UX101",
+      "course": "UI/UX Basics",
+      "date": "June 10, 2026 · 11:30 AM",
+      "status": "Scheduled"
+    }
+  ],
+  "upcomingExams": [
+    {
+      "id": "ex-ds-final",
+      "title": "Data Science Final",
+      "course": "Data Science Essentials",
+      "date": "June 18, 2026 · 9:00 AM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-ux-final",
+      "title": "UI/UX Final Quiz",
+      "course": "UI/UX Basics",
+      "date": "June 10, 2026 · 11:30 AM",
+      "status": "Scheduled"
+    }
+  ],
+  "announcements": [],
+  "recentActivity": [
+    { "id": "a1", "text": "Earned certificate: Python Fundamentals", "at": "Apr 15, 2026" },
+    { "id": "a2", "text": "Earned certificate: Introduction to Biology", "at": "Apr 28, 2026" },
+    { "id": "a3", "text": "Submitted Data Science capstone draft", "at": "Yesterday" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "student_id": "demo-001",
+  "name": "Alex",
+  "role": "learner",
+  "email": "alex.demo@smarted.test",
+  "courses": [
+    {
+      "id": "BIO101",
+      "title": "Introduction to Biology",
+      "progress_pct": 45,
+      "next_module": "Cell Structure",
+      "next_due": "Quiz 2 — Friday"
+    },
+    {
+      "id": "PY101",
+      "title": "Python Fundamentals",
+      "progress_pct": 70,
+      "next_module": "Functions & Loops",
+      "next_due": "Assignment 3 — Monday"
+    },
+    {
+      "id": "UX101",
+      "title": "UI/UX Basics",
+      "progress_pct": 20,
+      "next_module": "Wireframing",
+      "next_due": "Discussion post — Wednesday"
+    }
+  ]
+}

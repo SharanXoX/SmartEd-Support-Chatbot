@@ -1,0 +1,8 @@
+{
+  "title": "View Grades",
+  "keywords": ["view grades", "my grades", "gradebook", "marks", "scores", "results"],
+  "description": "Find grades and progress for courses",
+  "category": "student-navigation",
+  "intro": "Here's where to check your grades and progress:",
+  "suggested_replies": ["Progress overview", "Contact Support"]
+}

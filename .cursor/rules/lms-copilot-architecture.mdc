@@ -1,0 +1,68 @@
+---
+description: Master architecture for LMS AI Copilot — extend existing orchestration, never generic chatbot
+alwaysApply: true
+---
+
+# LMS AI Copilot — Continuation Architecture
+
+Read **`docs/LMS_COPILOT_ARCHITECTURE.md`** for the full master spec. This rule is the non-negotiable summary for every session.
+
+## Mission
+
+Extend an **existing** AI-native LMS Copilot. Do **not** redesign from scratch, replace orchestration, or turn it into a generic chatbot.
+
+## Golden rule
+
+**SYSTEM = intelligence. LLM = language.**
+
+- ❌ Giant prompts, full LMS dumps, LLM-chosen routes, unrestricted reasoning  
+- ✅ Orchestration, registry, session-scoped state, query-aware filtering, deterministic replies, minimal prompts  
+
+## Pipeline (preserve)
+
+```
+User message → merge/sanitize context → query_context_resolver (category + entity + outcome)
+→ response_orchestrator (nav / walkthrough / conversational)
+→ deterministic reply OR minimal QUERY_SCOPED_CONTEXT → LLM format only
+```
+
+LLM never sees raw/unvalidated LMS state.
+
+## Portable mock → production
+
+- Mock data in `mock-data/users/` must match **future API response shapes** (`studentId`, `courses[]`, `exams[]`, `certificates[]`, etc.).
+- Add data via **services** (`mockApi/`, `mock_data_loader.py`), not scattered JSON reads.
+- Expose production-shaped FastAPI routes; swap mock for real LMS APIs later without rewriting orchestration.
+
+## Query-aware fetching
+
+| Intent | Load only |
+|--------|-----------|
+| Exam | `active_exams`, related incomplete courses |
+| Course | Active courses + progress |
+| Certification | Certificates + completed courses |
+| Purchase | Purchases |
+
+Use `context_sanitizer.py` + `query_context_resolver.py` — extend, do not bypass.
+
+## Safety
+
+- **Registry is truth:** `lms_feature_registry.py`, `navigation_registry.py`, `frontend/src/registry/lmsRegistry.ts`
+- **Screenshots:** only `password_reset` walkthrough
+- **Active user only:** never leak other students' data
+- **Navigation:** empty-state pages still navigate; chat explains + opens page
+
+## Stack touchpoints
+
+- Backend orchestration: `backend/app/services/` (`chat_service`, `response_orchestrator`, `query_context_resolver`, `lms_context_service`)
+- Frontend: `ActiveUserContext`, `ChatContext` inject `lms_context` per turn; no UI redesign unless asked
+- AI: Groq via provider abstraction; keep provider-agnostic
+
+## Before merging changes
+
+1. Works for multiple demo users (different exams/certs/enrollments)?  
+2. Entity-specific query (e.g. "biology exam") uses resolver, not `courses[0]`?  
+3. No new hallucinated routes/features?  
+4. Prompt size stayed minimal for scoped queries?
+
+When in doubt, add **deterministic system logic first**, LLM second.

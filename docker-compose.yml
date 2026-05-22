@@ -1,0 +1,59 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: smarted_support
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/smarted_support
+      AI_PROVIDER: ${AI_PROVIDER:-groq}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-llama-3.3-70b-versatile}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      INTENT_FLOW_THRESHOLD: ${INTENT_FLOW_THRESHOLD:-0.38}
+      JWT_SECRET: ${JWT_SECRET:-change-me-docker-secret-min-length-16}
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:-admin@example.com}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:-changeme123}
+      CHROMA_PERSIST_DIR: /data/chroma
+      UPLOADS_DIR: /data/uploads
+      VISUAL_ASSETS_DIR: /data/visuals
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8080}
+      ESCALATION_WEBHOOK_URL: ${ESCALATION_WEBHOOK_URL:-}
+    volumes:
+      - chroma_data:/data/chroma
+      - uploads_data:/data/uploads
+      - visuals_data:/data/visuals
+      - ./backend/support-assets:/app/backend/support-assets
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.web
+    depends_on:
+      - api
+    ports:
+      - "8080:80"
+
+volumes:
+  pgdata:
+  chroma_data:
+  uploads_data:
+  visuals_data:

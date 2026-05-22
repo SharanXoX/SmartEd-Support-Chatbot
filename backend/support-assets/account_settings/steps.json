@@ -1,0 +1,14 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Click your avatar (bottom-left or top-right depending on layout) → **Account settings**."
+  },
+  {
+    "image": "step2.png",
+    "text": "Use the sidebar tabs for **Security**, **Notifications**, and **Billing**."
+  },
+  {
+    "image": "step3.png",
+    "text": "Toggle options as needed — remember to press **Save** when prompted."
+  }
+]

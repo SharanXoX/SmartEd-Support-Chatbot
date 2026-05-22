@@ -1,0 +1,71 @@
+{
+  "student_id": "demo-003",
+  "name": "Sam",
+  "email": "sam.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "overdue",
+  "courses": [
+    {
+      "id": "UX101",
+      "title": "UI/UX Basics",
+      "instructor": "Morgan Lee",
+      "thumbnail": "/demo-assets/courses/ux.png",
+      "progress_pct": 55,
+      "next_module": "Prototype critique",
+      "next_due": "Assignment 2 — OVERDUE (May 10)",
+      "completed": false,
+      "exam_ids": ["ex-ux-final"]
+    },
+    {
+      "id": "BIO101",
+      "title": "Introduction to Biology",
+      "instructor": "Dr. Chen",
+      "thumbnail": "/demo-assets/courses/bio.png",
+      "progress_pct": 38,
+      "next_module": "Lab report",
+      "next_due": "Lab 3 — OVERDUE (May 14)",
+      "completed": false,
+      "exam_ids": ["ex-bio-mid"]
+    }
+  ],
+  "exams": [
+    {
+      "id": "ex-ux-final",
+      "title": "UI/UX Final Quiz",
+      "course_id": "UX101",
+      "course": "UI/UX Basics",
+      "date": "June 10, 2026 · 11:30 AM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-bio-mid",
+      "title": "Biology Midterm",
+      "course_id": "BIO101",
+      "course": "Introduction to Biology",
+      "date": "May 28, 2026 · 10:00 AM",
+      "status": "Scheduled"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "p1",
+      "course_id": "UX101",
+      "courseTitle": "UI/UX Basics",
+      "purchasedAt": "Feb 14, 2026",
+      "price": "$45.00"
+    },
+    {
+      "id": "p2",
+      "course_id": "BIO101",
+      "courseTitle": "Introduction to Biology",
+      "purchasedAt": "Mar 5, 2026",
+      "price": "$49.00"
+    }
+  ],
+  "certificates": [],
+  "announcements": [],
+  "recent_activity": [
+    { "id": "a1", "text": "Reminder: 2 assignments overdue", "at": "Today" },
+    { "id": "a2", "text": "Viewed UI/UX assignment rubric", "at": "3 days ago" }
+  ]
+}

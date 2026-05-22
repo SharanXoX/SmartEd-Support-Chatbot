@@ -1,0 +1,15 @@
+{
+  "name": "smarted-support",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n api,ui -c cyan,magenta \"npm run dev:api\" \"npm run dev:ui\"",
+    "dev:api": "cd backend && python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload",
+    "dev:ui": "cd frontend && npm run dev",
+    "docker:up": "node scripts/docker-compose.js up --build -d",
+    "docker:down": "node scripts/docker-compose.js down",
+    "docker:logs": "node scripts/docker-compose.js logs -f"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

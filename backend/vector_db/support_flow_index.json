@@ -1,0 +1,402 @@
+{
+  "scanned_at": 1779452271.8320174,
+  "flows": [
+    {
+      "intent": "account_settings",
+      "keywords": [
+        "account settings",
+        "settings page",
+        "where are settings",
+        "preferences",
+        "notification settings",
+        "security settings"
+      ],
+      "steps": [
+        {
+          "text": "Click your avatar (bottom-left or top-right depending on layout) \u2192 **Account settings**.",
+          "image": "/support-assets/account_settings/step1.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "Use the sidebar tabs for **Security**, **Notifications**, and **Billing**.",
+          "image": "/support-assets/account_settings/step2.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "Toggle options as needed \u2014 remember to press **Save** when prompted.",
+          "image": "/support-assets/account_settings/step3.png",
+          "open_url": null,
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Navigate account settings like this:",
+      "suggested_replies": [
+        "Enable 2FA",
+        "Where is billing history?"
+      ],
+      "title": "Account Settings",
+      "description": "Navigate account settings, security, and notifications",
+      "folder_id": "account_settings"
+    },
+    {
+      "intent": "download_notes",
+      "keywords": [
+        "download notes",
+        "course materials",
+        "pdf notes",
+        "handouts",
+        "download pdf"
+      ],
+      "steps": [
+        {
+          "text": "Open **Notes** from the sidebar (or your course module list).",
+          "image": "/support-assets/download_notes/step1.png",
+          "open_url": "/demo/notes",
+          "auto_navigate": false
+        },
+        {
+          "text": "Choose the module or week that contains the material you need.",
+          "image": "/support-assets/download_notes/step2.png",
+          "open_url": "/demo/notes",
+          "auto_navigate": false
+        },
+        {
+          "text": "Click **Download** next to the PDF or notes file to save it to your laptop.",
+          "image": "/support-assets/download_notes/step3.png",
+          "open_url": "/demo/notes",
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Here's how to download course notes and materials:",
+      "suggested_replies": [
+        "Watch Lecture",
+        "File won't download"
+      ],
+      "title": "Download Notes",
+      "description": "Download lecture notes and materials",
+      "folder_id": "download_notes"
+    },
+    {
+      "intent": "enroll_course",
+      "keywords": [
+        "enroll",
+        "enrollment",
+        "join course",
+        "add course",
+        "register course",
+        "sign up course",
+        "enroll in a course",
+        "enroll course"
+      ],
+      "steps": [
+        {
+          "text": "Open **My Courses** from the left sidebar.",
+          "image": "/support-assets/enroll_course/step1.png",
+          "open_url": "/demo/courses",
+          "auto_navigate": false
+        },
+        {
+          "text": "Browse recommended courses or use search, then select a course card.",
+          "image": "/support-assets/enroll_course/step2.png",
+          "open_url": "/demo/courses",
+          "auto_navigate": false
+        },
+        {
+          "text": "Click **Enroll** or **Continue** to add the course to your learning path.",
+          "image": "/support-assets/enroll_course/step3.png",
+          "open_url": "/demo/courses",
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Here's how to enroll in a course on your dashboard:",
+      "suggested_replies": [
+        "My Courses",
+        "Payment failed"
+      ],
+      "title": "Enroll in a Course",
+      "description": "Guide students to browse and enroll in a course",
+      "folder_id": "enroll_course"
+    },
+    {
+      "intent": "password_reset",
+      "keywords": [
+        "forgot password",
+        "reset password",
+        "password issue",
+        "can't log in",
+        "cannot login",
+        "cant access my account",
+        "can't access my account",
+        "cannot access account",
+        "access my account",
+        "locked out",
+        "change password",
+        "password reset"
+      ],
+      "steps": [
+        {
+          "text": "From the login screen, choose **Forgot password**.",
+          "image": "/support-assets/password_reset/step1.png",
+          "open_url": "/demo/settings",
+          "auto_navigate": false
+        },
+        {
+          "text": "Enter your registered email address and submit the reset request.",
+          "image": "/support-assets/password_reset/step2.png",
+          "open_url": "/demo/settings",
+          "auto_navigate": false
+        },
+        {
+          "text": "Open the reset link from your inbox within ~15 minutes and set a new password.",
+          "image": "/support-assets/password_reset/step3.png",
+          "open_url": "/demo/settings",
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Here's the quickest path to reset your password:",
+      "suggested_replies": [
+        "I didn't get the email",
+        "Still locked out"
+      ],
+      "title": "Password Reset",
+      "description": "Help users recover account access when they cannot sign in",
+      "folder_id": "password_reset"
+    },
+    {
+      "intent": "payment_failed",
+      "keywords": [
+        "payment failed",
+        "payment declined",
+        "card declined",
+        "transaction failed",
+        "billing error",
+        "charge failed"
+      ],
+      "steps": [
+        {
+          "text": "Confirm your billing profile shows the correct card and expiry date.",
+          "image": "/support-assets/payment_failed/step1.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "Retry using another browser window or temporarily disable aggressive card-blocking extensions.",
+          "image": "/support-assets/payment_failed/step2.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "If money left your bank but access didn't update, grab your receipt reference and open a billing ticket.",
+          "image": "/support-assets/payment_failed/step3.png",
+          "open_url": null,
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Let's troubleshoot a failed payment:",
+      "suggested_replies": [
+        "Money was deducted",
+        "Which receipt reference do you need?"
+      ],
+      "title": "Payment Failed",
+      "description": "Troubleshoot declined or failed payments",
+      "folder_id": "payment_failed"
+    },
+    {
+      "intent": "profile_update",
+      "keywords": [
+        "profile update",
+        "change profile",
+        "edit profile",
+        "profile picture",
+        "avatar",
+        "update my profile"
+      ],
+      "steps": [
+        {
+          "text": "Go to **Account \u2192 Profile**.",
+          "image": "/support-assets/profile_update/step1.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "Edit fields like display name or bio \u2014 hit **Save changes**.",
+          "image": "/support-assets/profile_update/step2.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "For profile photos, choose **Upload**, crop if prompted, then confirm.",
+          "image": "/support-assets/profile_update/step3.png",
+          "open_url": null,
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Update your profile safely:",
+      "suggested_replies": [
+        "Photo won't upload",
+        "Change email instead"
+      ],
+      "title": "Profile Update",
+      "description": "Update profile information and avatar",
+      "folder_id": "profile_update"
+    },
+    {
+      "intent": "submit_assignment",
+      "keywords": [
+        "submit assignment",
+        "upload homework",
+        "assignment upload",
+        "where assignment",
+        "hand in assignment",
+        "turn in homework"
+      ],
+      "steps": [
+        {
+          "text": "Open the **Assignments** section from the sidebar.",
+          "image": "/support-assets/submit_assignment/step1.png",
+          "open_url": "/demo/assignments",
+          "auto_navigate": true
+        },
+        {
+          "text": "Select the assignment that's due and review the instructions.",
+          "image": "/support-assets/submit_assignment/step2.png",
+          "open_url": "/demo/assignments",
+          "auto_navigate": false
+        },
+        {
+          "text": "Click **Upload** or **Submit**, attach your file, and confirm submission.",
+          "image": "/support-assets/submit_assignment/step3.png",
+          "open_url": "/demo/assignment-upload",
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Follow these steps to submit your assignment:",
+      "suggested_replies": [
+        "I can't upload the file",
+        "Contact Support"
+      ],
+      "title": "Submit Assignment",
+      "description": "Upload and submit coursework",
+      "folder_id": "submit_assignment"
+    },
+    {
+      "intent": "upload_documents",
+      "keywords": [
+        "upload documents",
+        "upload files",
+        "attach documents",
+        "how do i upload",
+        "document upload",
+        "add files"
+      ],
+      "steps": [
+        {
+          "text": "Open **Documents** (or **Uploads**) from the main navigation.",
+          "image": "/support-assets/upload_documents/step1.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "Drag files into the upload zone or click **Browse** \u2014 PDF and images up to the stated limit.",
+          "image": "/support-assets/upload_documents/step2.png",
+          "open_url": null,
+          "auto_navigate": false
+        },
+        {
+          "text": "Wait for processing, then verify status shows **Verified** / **Ready** before continuing.",
+          "image": "/support-assets/upload_documents/step3.png",
+          "open_url": null,
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Follow these steps to upload documents:",
+      "suggested_replies": [
+        "Supported file types?",
+        "Upload stuck processing"
+      ],
+      "title": "Upload Documents",
+      "description": "Guide users through uploading required documents",
+      "folder_id": "upload_documents"
+    },
+    {
+      "intent": "view_grades",
+      "keywords": [
+        "view grades",
+        "my grades",
+        "gradebook",
+        "marks",
+        "scores",
+        "results"
+      ],
+      "steps": [
+        {
+          "text": "Open **Progress** from the sidebar to see overall performance.",
+          "image": "/support-assets/view_grades/step1.png",
+          "open_url": "/demo/progress",
+          "auto_navigate": false
+        },
+        {
+          "text": "Select a course to view assignment and quiz scores.",
+          "image": "/support-assets/view_grades/step2.png",
+          "open_url": "/demo/progress",
+          "auto_navigate": false
+        },
+        {
+          "text": "Review each graded item and any instructor feedback.",
+          "image": "/support-assets/view_grades/step3.png",
+          "open_url": "/demo/progress",
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Here's where to check your grades and progress:",
+      "suggested_replies": [
+        "Progress overview",
+        "Contact Support"
+      ],
+      "title": "View Grades",
+      "description": "Find grades and progress for courses",
+      "folder_id": "view_grades"
+    },
+    {
+      "intent": "watch_lecture",
+      "keywords": [
+        "watch lecture",
+        "video lesson",
+        "play video",
+        "lecture recording",
+        "course video",
+        "watch a lecture"
+      ],
+      "steps": [
+        {
+          "text": "From the dashboard, use **Continue Learning** or open **My Courses**.",
+          "image": "/support-assets/watch_lecture/step1.png",
+          "open_url": "/demo/dashboard",
+          "auto_navigate": false
+        },
+        {
+          "text": "Open your course and select the current module or lesson.",
+          "image": "/support-assets/watch_lecture/step2.png",
+          "open_url": "/demo/courses",
+          "auto_navigate": false
+        },
+        {
+          "text": "Press **Play** on the lecture video. You can pause and resume anytime.",
+          "image": "/support-assets/watch_lecture/step3.png",
+          "open_url": "/demo/courses",
+          "auto_navigate": false
+        }
+      ],
+      "intro": "Here's how to watch your next lecture:",
+      "suggested_replies": [
+        "Continue Learning",
+        "Video won't play"
+      ],
+      "title": "Watch a Lecture",
+      "description": "Access lecture videos inside a course",
+      "folder_id": "watch_lecture"
+    }
+  ]
+}

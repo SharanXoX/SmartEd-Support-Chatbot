@@ -1,0 +1,8 @@
+{
+  "title": "Enroll in a Course",
+  "keywords": ["enroll", "enrollment", "join course", "add course", "register course", "sign up course"],
+  "description": "Guide students to browse and enroll in a course",
+  "category": "student-navigation",
+  "intro": "Here's how to enroll in a course on your dashboard:",
+  "suggested_replies": ["My Courses", "Payment failed"]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-001",
+  "student_id": "sam-001",
+  "name": "Sam",
+  "email": "sam.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "overdue",
+  "purchases": [
+    { "id": "p1", "course_id": "UX101", "courseTitle": "UI/UX Basics", "purchasedAt": "Feb 14, 2026", "price": "$45.00" }
+  ],
+  "courses": [
+    {
+      "id": "UX101",
+      "title": "UI/UX Basics",
+      "instructor": "Morgan Lee",
+      "progress_pct": 28,
+      "next_module": "Prototype critique",
+      "next_due": "Assignment 2 — OVERDUE (May 10)",
+      "completed": false
+    }
+  ],
+  "progress": { "UX101": 28 },
+  "certificates": [],
+  "exams": [
+    {
+      "id": "ex-ux-final",
+      "title": "UI/UX Final Quiz",
+      "course_id": "UX101",
+      "course": "UI/UX Basics",
+      "date": "June 10, 2026 · 11:30 AM",
+      "status": "Scheduled"
+    }
+  ],
+  "upcomingExams": [
+    {
+      "id": "ex-ux-final",
+      "title": "UI/UX Final Quiz",
+      "course": "UI/UX Basics",
+      "date": "June 10, 2026 · 11:30 AM",
+      "status": "Scheduled"
+    }
+  ],
+  "announcements": [],
+  "recentActivity": [
+    { "id": "a1", "text": "Overdue: Assignment 2 in UI/UX Basics", "at": "Today" },
+    { "id": "a2", "text": "Viewed assignment rubric", "at": "3 days ago" }
+  ]
+}

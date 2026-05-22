@@ -1,0 +1,14 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Go to **Account → Profile**."
+  },
+  {
+    "image": "step2.png",
+    "text": "Edit fields like display name or bio — hit **Save changes**."
+  },
+  {
+    "image": "step3.png",
+    "text": "For profile photos, choose **Upload**, crop if prompted, then confirm."
+  }
+]

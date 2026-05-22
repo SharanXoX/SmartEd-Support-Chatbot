@@ -1,0 +1,14 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Open **Documents** (or **Uploads**) from the main navigation."
+  },
+  {
+    "image": "step2.png",
+    "text": "Drag files into the upload zone or click **Browse** — PDF and images up to the stated limit."
+  },
+  {
+    "image": "step3.png",
+    "text": "Wait for processing, then verify status shows **Verified** / **Ready** before continuing."
+  }
+]

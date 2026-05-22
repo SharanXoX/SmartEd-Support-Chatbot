@@ -1,0 +1,17 @@
+[
+  {
+    "image": "step1.png",
+    "text": "From the login screen, choose **Forgot password**.",
+    "open_url": "/demo/settings"
+  },
+  {
+    "image": "step2.png",
+    "text": "Enter your registered email address and submit the reset request.",
+    "open_url": "/demo/settings"
+  },
+  {
+    "image": "step3.png",
+    "text": "Open the reset link from your inbox within ~15 minutes and set a new password.",
+    "open_url": "/demo/settings"
+  }
+]

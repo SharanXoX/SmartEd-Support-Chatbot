@@ -1,0 +1,14 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Confirm your billing profile shows the correct card and expiry date."
+  },
+  {
+    "image": "step2.png",
+    "text": "Retry using another browser window or temporarily disable aggressive card-blocking extensions."
+  },
+  {
+    "image": "step3.png",
+    "text": "If money left your bank but access didn't update, grab your receipt reference and open a billing ticket."
+  }
+]

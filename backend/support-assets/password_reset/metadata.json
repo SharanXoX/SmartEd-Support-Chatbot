@@ -1,0 +1,19 @@
+{
+  "title": "Password Reset",
+  "keywords": [
+    "forgot password",
+    "reset password",
+    "password issue",
+    "can't log in",
+    "cannot login",
+    "cant access my account",
+    "can't access my account",
+    "cannot access account",
+    "access my account",
+    "locked out",
+    "change password"
+  ],
+  "description": "Help users recover account access when they cannot sign in",
+  "intro": "Here's the quickest path to reset your password:",
+  "suggested_replies": ["I didn't get the email", "Still locked out"]
+}

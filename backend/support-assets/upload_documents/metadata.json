@@ -1,0 +1,14 @@
+{
+  "title": "Upload Documents",
+  "keywords": [
+    "upload documents",
+    "upload files",
+    "attach documents",
+    "how do i upload",
+    "document upload",
+    "add files"
+  ],
+  "description": "Guide users through uploading required documents",
+  "intro": "Follow these steps to upload documents:",
+  "suggested_replies": ["Supported file types?", "Upload stuck processing"]
+}

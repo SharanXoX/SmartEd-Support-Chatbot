@@ -1,0 +1,98 @@
+{
+  "student_id": "demo-001",
+  "name": "Alex",
+  "email": "alex.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "beginner",
+  "courses": [
+    {
+      "id": "BIO101",
+      "title": "Introduction to Biology",
+      "instructor": "Dr. Chen",
+      "thumbnail": "/demo-assets/courses/bio.png",
+      "progress_pct": 45,
+      "next_module": "Cell Structure",
+      "next_due": "Quiz 2 — Friday",
+      "completed": false,
+      "exam_ids": ["ex-bio-mid"]
+    },
+    {
+      "id": "PY101",
+      "title": "Python Fundamentals",
+      "instructor": "Prof. Rivera",
+      "thumbnail": "/demo-assets/courses/python.png",
+      "progress_pct": 70,
+      "next_module": "Functions & Loops",
+      "next_due": "Assignment 3 — Monday",
+      "completed": false,
+      "exam_ids": ["ex-py-assess"]
+    },
+    {
+      "id": "UX101",
+      "title": "UI/UX Basics",
+      "instructor": "Morgan Lee",
+      "thumbnail": "/demo-assets/courses/ux.png",
+      "progress_pct": 20,
+      "next_module": "Wireframing",
+      "next_due": "Discussion post — Wednesday",
+      "completed": false,
+      "exam_ids": ["ex-ux-final"]
+    }
+  ],
+  "exams": [
+    {
+      "id": "ex-bio-mid",
+      "title": "Biology Midterm",
+      "course_id": "BIO101",
+      "course": "Introduction to Biology",
+      "date": "May 28, 2026 · 10:00 AM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-py-assess",
+      "title": "Python Assessment",
+      "course_id": "PY101",
+      "course": "Python Fundamentals",
+      "date": "June 2, 2026 · 2:00 PM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-ux-final",
+      "title": "UI/UX Final Quiz",
+      "course_id": "UX101",
+      "course": "UI/UX Basics",
+      "date": "June 10, 2026 · 11:30 AM",
+      "status": "Scheduled"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "p1",
+      "course_id": "BIO101",
+      "courseTitle": "Introduction to Biology",
+      "purchasedAt": "Jan 12, 2026",
+      "price": "$49.00"
+    },
+    {
+      "id": "p2",
+      "course_id": "PY101",
+      "courseTitle": "Python Fundamentals",
+      "purchasedAt": "Feb 3, 2026",
+      "price": "$59.00"
+    },
+    {
+      "id": "p3",
+      "course_id": "UX101",
+      "courseTitle": "UI/UX Basics",
+      "purchasedAt": "Mar 18, 2026",
+      "price": "$45.00"
+    }
+  ],
+  "certificates": [],
+  "announcements": [],
+  "recent_activity": [
+    { "id": "a1", "text": "Continued Biology — Cell Structure module", "at": "2 hours ago" },
+    { "id": "a2", "text": "Submitted Python practice exercise", "at": "Yesterday" },
+    { "id": "a3", "text": "Enrolled in UI/UX Basics", "at": "Mar 18, 2026" }
+  ]
+}

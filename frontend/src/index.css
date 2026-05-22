@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Demo user switcher — readable native option list (Windows/Chrome) */
+select.demo-user-switcher {
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+select.demo-user-switcher option {
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+select.demo-user-switcher option:checked,
+select.demo-user-switcher option:hover {
+  color: #5b21b6;
+  background-color: #ede9fe;
+}
+
+/* Floating chat — readable text (overrides dark mode on demo LMS) */
+.floating-chat-panel {
+  color-scheme: light;
+}
+
+.floating-chat-input {
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+.floating-chat-input::placeholder {
+  color: #64748b;
+  opacity: 1;
+}
+
+.floating-chat-messages {
+  color: #1e293b;
+}

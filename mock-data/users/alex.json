@@ -1,0 +1,73 @@
+{
+  "id": "alex-001",
+  "student_id": "alex-001",
+  "name": "Alex",
+  "email": "alex.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "beginner",
+  "purchases": [
+    { "id": "p1", "course_id": "BIO101", "courseTitle": "Introduction to Biology", "purchasedAt": "Jan 12, 2026", "price": "$49.00" },
+    { "id": "p2", "course_id": "PY101", "courseTitle": "Python Fundamentals", "purchasedAt": "Feb 3, 2026", "price": "$59.00" }
+  ],
+  "courses": [
+    {
+      "id": "BIO101",
+      "title": "Introduction to Biology",
+      "instructor": "Dr. Chen",
+      "progress_pct": 42,
+      "next_module": "Cell Structure",
+      "next_due": "Quiz 2 — Friday",
+      "completed": false
+    },
+    {
+      "id": "PY101",
+      "title": "Python Fundamentals",
+      "instructor": "Prof. Rivera",
+      "progress_pct": 58,
+      "next_module": "Functions & Loops",
+      "next_due": "Assignment 2 — Monday",
+      "completed": false
+    }
+  ],
+  "progress": { "BIO101": 42, "PY101": 58 },
+  "certificates": [],
+  "exams": [
+    {
+      "id": "ex-bio-mid",
+      "title": "Biology Midterm",
+      "course_id": "BIO101",
+      "course": "Introduction to Biology",
+      "date": "May 28, 2026 · 10:00 AM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-py-assess",
+      "title": "Python Assessment",
+      "course_id": "PY101",
+      "course": "Python Fundamentals",
+      "date": "June 2, 2026 · 2:00 PM",
+      "status": "Scheduled"
+    }
+  ],
+  "upcomingExams": [
+    {
+      "id": "ex-bio-mid",
+      "title": "Biology Midterm",
+      "course": "Introduction to Biology",
+      "date": "May 28, 2026 · 10:00 AM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-py-assess",
+      "title": "Python Assessment",
+      "course": "Python Fundamentals",
+      "date": "June 2, 2026 · 2:00 PM",
+      "status": "Scheduled"
+    }
+  ],
+  "announcements": [],
+  "recentActivity": [
+    { "id": "a1", "text": "Started Cell Structure in Biology", "at": "Today" },
+    { "id": "a2", "text": "Completed Python practice quiz", "at": "Yesterday" }
+  ]
+}

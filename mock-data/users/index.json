@@ -1,0 +1,9 @@
+{
+  "default_user_id": "alex-001",
+  "users": [
+    { "id": "alex-001", "file": "alex.json", "name": "Alex", "profile_type": "beginner" },
+    { "id": "sam-001", "file": "sam.json", "name": "Sam", "profile_type": "overdue" },
+    { "id": "priya-001", "file": "priya.json", "name": "Priya", "profile_type": "advanced" },
+    { "id": "john-001", "file": "john.json", "name": "John", "profile_type": "new" }
+  ]
+}

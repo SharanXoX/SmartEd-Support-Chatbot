@@ -1,0 +1,17 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Open **Progress** from the sidebar to see overall performance.",
+    "open_url": "/demo/progress"
+  },
+  {
+    "image": "step2.png",
+    "text": "Select a course to view assignment and quiz scores.",
+    "open_url": "/demo/progress"
+  },
+  {
+    "image": "step3.png",
+    "text": "Review each graded item and any instructor feedback.",
+    "open_url": "/demo/progress"
+  }
+]

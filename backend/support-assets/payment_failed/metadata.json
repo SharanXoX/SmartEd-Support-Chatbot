@@ -1,0 +1,14 @@
+{
+  "title": "Payment Failed",
+  "keywords": [
+    "payment failed",
+    "payment declined",
+    "card declined",
+    "transaction failed",
+    "billing error",
+    "charge failed"
+  ],
+  "description": "Troubleshoot declined or failed payments",
+  "intro": "Let's troubleshoot a failed payment:",
+  "suggested_replies": ["Money was deducted", "Which receipt reference do you need?"]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "BIO101",
+    "title": "Introduction to Biology",
+    "instructor": "Dr. Chen",
+    "thumbnail": "/demo-assets/courses/bio.png"
+  },
+  {
+    "id": "PY101",
+    "title": "Python Fundamentals",
+    "instructor": "Prof. Rivera",
+    "thumbnail": "/demo-assets/courses/python.png"
+  },
+  {
+    "id": "UX101",
+    "title": "UI/UX Basics",
+    "instructor": "Morgan Lee",
+    "thumbnail": "/demo-assets/courses/ux.png"
+  },
+  {
+    "id": "DS201",
+    "title": "Data Science Essentials",
+    "instructor": "Dr. Patel",
+    "thumbnail": "/demo-assets/courses/data.png"
+  }
+]

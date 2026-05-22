@@ -1,0 +1,17 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Open **Notes** from the sidebar (or your course module list).",
+    "open_url": "/demo/notes"
+  },
+  {
+    "image": "step2.png",
+    "text": "Choose the module or week that contains the material you need.",
+    "open_url": "/demo/notes"
+  },
+  {
+    "image": "step3.png",
+    "text": "Click **Download** next to the PDF or notes file to save it to your laptop.",
+    "open_url": "/demo/notes"
+  }
+]

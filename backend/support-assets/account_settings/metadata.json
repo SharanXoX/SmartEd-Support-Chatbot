@@ -1,0 +1,14 @@
+{
+  "title": "Account Settings",
+  "keywords": [
+    "account settings",
+    "settings page",
+    "where are settings",
+    "preferences",
+    "notification settings",
+    "security settings"
+  ],
+  "description": "Navigate account settings, security, and notifications",
+  "intro": "Navigate account settings like this:",
+  "suggested_replies": ["Enable 2FA", "Where is billing history?"]
+}

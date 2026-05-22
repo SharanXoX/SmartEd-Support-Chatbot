@@ -1,0 +1,27 @@
+{
+  "intent": "profile_update",
+  "keywords": [
+    "profile update",
+    "change profile",
+    "edit profile",
+    "profile picture",
+    "avatar",
+    "update my profile"
+  ],
+  "intro": "Update your profile safely:",
+  "steps": [
+    {
+      "text": "Go to **Account → Profile**.",
+      "image": "/demo-assets/profile/step1.png"
+    },
+    {
+      "text": "Edit fields like display name or bio — hit **Save changes**.",
+      "image": "/demo-assets/profile/step2.png"
+    },
+    {
+      "text": "For profile photos, choose **Upload**, crop if prompted, then confirm.",
+      "image": "/demo-assets/profile/step3.png"
+    }
+  ],
+  "suggested_replies": ["Photo won't upload", "Change email instead"]
+}

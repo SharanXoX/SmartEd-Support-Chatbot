@@ -1,0 +1,17 @@
+[
+  {
+    "image": "step1.png",
+    "text": "Open **My Courses** from the left sidebar.",
+    "open_url": "/demo/courses"
+  },
+  {
+    "image": "step2.png",
+    "text": "Browse recommended courses or use search, then select a course card.",
+    "open_url": "/demo/courses"
+  },
+  {
+    "image": "step3.png",
+    "text": "Click **Enroll** or **Continue** to add the course to your learning path.",
+    "open_url": "/demo/courses"
+  }
+]

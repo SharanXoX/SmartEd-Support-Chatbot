@@ -1,0 +1,98 @@
+{
+  "student_id": "demo-002",
+  "name": "Jordan",
+  "email": "jordan.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "advanced",
+  "courses": [
+    {
+      "id": "PY101",
+      "title": "Python Fundamentals",
+      "instructor": "Prof. Rivera",
+      "thumbnail": "/demo-assets/courses/python.png",
+      "progress_pct": 92,
+      "next_module": "Capstone prep",
+      "next_due": "Final project — June 15",
+      "completed": false,
+      "exam_ids": ["ex-py-assess"]
+    },
+    {
+      "id": "DS201",
+      "title": "Data Science Essentials",
+      "instructor": "Dr. Patel",
+      "thumbnail": "/demo-assets/courses/data.png",
+      "progress_pct": 78,
+      "next_module": "Model evaluation",
+      "next_due": "Lab report — Thursday",
+      "completed": false,
+      "exam_ids": ["ex-ds-final"]
+    },
+    {
+      "id": "BIO101",
+      "title": "Introduction to Biology",
+      "instructor": "Dr. Chen",
+      "thumbnail": "/demo-assets/courses/bio.png",
+      "progress_pct": 88,
+      "next_module": "Genetics review",
+      "next_due": "Reading quiz — Tuesday",
+      "completed": false,
+      "exam_ids": ["ex-bio-mid"]
+    }
+  ],
+  "exams": [
+    {
+      "id": "ex-py-assess",
+      "title": "Python Assessment",
+      "course_id": "PY101",
+      "course": "Python Fundamentals",
+      "date": "June 2, 2026 · 2:00 PM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-ds-final",
+      "title": "Data Science Final",
+      "course_id": "DS201",
+      "course": "Data Science Essentials",
+      "date": "June 18, 2026 · 9:00 AM",
+      "status": "Scheduled"
+    },
+    {
+      "id": "ex-bio-mid",
+      "title": "Biology Midterm",
+      "course_id": "BIO101",
+      "course": "Introduction to Biology",
+      "date": "May 28, 2026 · 10:00 AM",
+      "status": "Completed",
+      "score": 91
+    }
+  ],
+  "purchases": [
+    {
+      "id": "p1",
+      "course_id": "PY101",
+      "courseTitle": "Python Fundamentals",
+      "purchasedAt": "Nov 2, 2025",
+      "price": "$59.00"
+    },
+    {
+      "id": "p2",
+      "course_id": "DS201",
+      "courseTitle": "Data Science Essentials",
+      "purchasedAt": "Jan 20, 2026",
+      "price": "$79.00"
+    },
+    {
+      "id": "p3",
+      "course_id": "BIO101",
+      "courseTitle": "Introduction to Biology",
+      "purchasedAt": "Mar 1, 2026",
+      "price": "$49.00"
+    }
+  ],
+  "certificates": [],
+  "announcements": [],
+  "recent_activity": [
+    { "id": "a1", "text": "Scored 91% on Biology Midterm", "at": "Today" },
+    { "id": "a2", "text": "Completed Data Science lab 4", "at": "Yesterday" }
+  ]
+}

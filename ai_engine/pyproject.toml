@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smarted-ai-engine"
+version = "0.1.0"
+description = "RAG and ingestion utilities for SmartEd Support chatbot"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "chromadb>=0.4.22",
+  "openai>=1.30.0",
+  "pypdf>=4.0.0",
+  "python-docx>=1.1.0",
+  "beautifulsoup4>=4.12.0",
+  "markdown-it-py>=3.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["smarted_ai_engine*"]

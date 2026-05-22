@@ -1,0 +1,27 @@
+{
+  "intent": "upload_documents",
+  "keywords": [
+    "upload documents",
+    "upload files",
+    "attach documents",
+    "how do i upload",
+    "document upload",
+    "add files"
+  ],
+  "intro": "Follow these steps to upload documents:",
+  "steps": [
+    {
+      "text": "Open **Documents** (or **Uploads**) from the main navigation.",
+      "image": "/demo-assets/uploads/step1.png"
+    },
+    {
+      "text": "Drag files into the upload zone or click **Browse** — PDF and images up to the stated limit.",
+      "image": "/demo-assets/uploads/step2.png"
+    },
+    {
+      "text": "Wait for processing, then verify status shows **Verified** / **Ready** before continuing.",
+      "image": "/demo-assets/uploads/step3.png"
+    }
+  ],
+  "suggested_replies": ["Supported file types?", "Upload stuck processing"]
+}

@@ -1,0 +1,112 @@
+{
+  "student_id": "demo-004",
+  "name": "Riley",
+  "email": "riley.demo@smarted.test",
+  "role": "learner",
+  "profile_type": "graduate",
+  "courses": [
+    {
+      "id": "PY101",
+      "title": "Python Fundamentals",
+      "instructor": "Prof. Rivera",
+      "thumbnail": "/demo-assets/courses/python.png",
+      "progress_pct": 100,
+      "next_module": "Completed",
+      "next_due": "—",
+      "completed": true,
+      "exam_ids": ["ex-py-assess"]
+    },
+    {
+      "id": "BIO101",
+      "title": "Introduction to Biology",
+      "instructor": "Dr. Chen",
+      "thumbnail": "/demo-assets/courses/bio.png",
+      "progress_pct": 100,
+      "next_module": "Completed",
+      "next_due": "—",
+      "completed": true,
+      "exam_ids": ["ex-bio-mid"]
+    },
+    {
+      "id": "UX101",
+      "title": "UI/UX Basics",
+      "instructor": "Morgan Lee",
+      "thumbnail": "/demo-assets/courses/ux.png",
+      "progress_pct": 65,
+      "next_module": "Usability testing",
+      "next_due": "Final project — June 20",
+      "completed": false,
+      "exam_ids": ["ex-ux-final"]
+    }
+  ],
+  "exams": [
+    {
+      "id": "ex-py-assess",
+      "title": "Python Assessment",
+      "course_id": "PY101",
+      "course": "Python Fundamentals",
+      "date": "Apr 10, 2026 · 2:00 PM",
+      "status": "Completed",
+      "score": 94
+    },
+    {
+      "id": "ex-bio-mid",
+      "title": "Biology Midterm",
+      "course_id": "BIO101",
+      "course": "Introduction to Biology",
+      "date": "Apr 22, 2026 · 10:00 AM",
+      "status": "Completed",
+      "score": 88
+    },
+    {
+      "id": "ex-ux-final",
+      "title": "UI/UX Final Quiz",
+      "course_id": "UX101",
+      "course": "UI/UX Basics",
+      "date": "June 10, 2026 · 11:30 AM",
+      "status": "Scheduled"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "p1",
+      "course_id": "PY101",
+      "courseTitle": "Python Fundamentals",
+      "purchasedAt": "Sep 8, 2025",
+      "price": "$59.00"
+    },
+    {
+      "id": "p2",
+      "course_id": "BIO101",
+      "courseTitle": "Introduction to Biology",
+      "purchasedAt": "Oct 1, 2025",
+      "price": "$49.00"
+    },
+    {
+      "id": "p3",
+      "course_id": "UX101",
+      "courseTitle": "UI/UX Basics",
+      "purchasedAt": "Jan 5, 2026",
+      "price": "$45.00"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-py",
+      "course_id": "PY101",
+      "course_title": "Python Fundamentals",
+      "issued_at": "Apr 15, 2026"
+    },
+    {
+      "id": "cert-bio",
+      "course_id": "BIO101",
+      "course_title": "Introduction to Biology",
+      "issued_at": "Apr 28, 2026"
+    }
+  ],
+  "announcements": [],
+  "recent_activity": [
+    { "id": "a1", "text": "Earned certificate: Python Fundamentals", "at": "Apr 15, 2026" },
+    { "id": "a2", "text": "Earned certificate: Introduction to Biology", "at": "Apr 28, 2026" }
+  ]
+}

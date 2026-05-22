@@ -1,0 +1,27 @@
+{
+  "intent": "account_settings",
+  "keywords": [
+    "account settings",
+    "settings page",
+    "where are settings",
+    "preferences",
+    "notification settings",
+    "security settings"
+  ],
+  "intro": "Navigate account settings like this:",
+  "steps": [
+    {
+      "text": "Click your avatar (bottom-left or top-right depending on layout) → **Account settings**.",
+      "image": "/demo-assets/account/step1.png"
+    },
+    {
+      "text": "Use the sidebar tabs for **Security**, **Notifications**, and **Billing**.",
+      "image": "/demo-assets/account/step2.png"
+    },
+    {
+      "text": "Toggle options as needed — remember to press **Save** when prompted.",
+      "image": "/demo-assets/account/step3.png"
+    }
+  ],
+  "suggested_replies": ["Enable 2FA", "Where is billing history?"]
+}
