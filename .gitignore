@@ -1,24 +1,58 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/.venv/
+.venv/
+venv/
+*.egg-info/
+ai_engine/build/
+dist/
+build/
+
+# Environment & secrets (never commit)
 .env
 **/.env
 !.env.example
-backend/.venv
-.venv
-*.egg-info/
-ai_engine/build/
-*.pyc
-__pycache__
-.pytest_cache
-.mypy_cache
-.ruff_cache
-vector_db/chroma_data
-storage/uploads
-storage/visuals
-backend/storage
-.idea
-.vscode
-coverage
-htmlcov
+!frontend/.env.development
+!frontend/.env.production
+
+# Build & cache
+frontend/dist/
+*.log
+.cache/
+.parcel-cache/
+.turbo/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+coverage/
+.coverage
+
+# Databases & local runtime data
+*.db
+backend/dev.db
 smarted_support.db
 **/smarted_support.db
+vector_db/chroma_data/
+storage/uploads/
+storage/visuals/
+backend/storage/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker / local overrides
+docker-compose.override.yml

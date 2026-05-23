@@ -21,10 +21,14 @@ from app.services.support_indexer import get_support_indexer
 from app.rate_limit import limiter
 from app.ai.provider_factory import get_chat_provider
 from app.env_bootstrap import bootstrap_env, env_status
+from app.middleware import RequestLoggingMiddleware
 from app.routers import admin, auth, chat, debug_routes, demo_routes, ws_chat
 from app.services.demo_seed import seed_demo_faqs
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s [%(name)s] %(message)s",
+)
 logger = logging.getLogger("smarted.api")
 
 bootstrap_env()
@@ -88,6 +92,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title=settings.app_name, lifespan=lifespan)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+app.add_middleware(RequestLoggingMiddleware)
 app.add_middleware(SlowAPIMiddleware)
 
 app.add_middleware(
@@ -115,6 +120,7 @@ app.mount(
 )
 
 
-@app.get("/health")
+@app.get("/health", tags=["ops"])
 def health() -> dict[str, str]:
-    return {"status": "ok"}
+    """Liveness probe for load balancers and deployment pipelines."""
+    return {"status": "healthy", "service": settings.app_name}

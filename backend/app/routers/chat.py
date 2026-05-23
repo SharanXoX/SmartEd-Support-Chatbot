@@ -1,5 +1,7 @@
 """REST chat endpoints."""
 
+import logging
+import time
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, Request
@@ -14,6 +16,7 @@ from app.services.asset_urls import get_public_base_url
 from app.services.chat_service import generate_turn
 
 router = APIRouter(prefix="/chat", tags=["chat"])
+logger = logging.getLogger("smarted.chat")
 
 
 def _get_or_create_conversation(db: Session, session_key: str) -> Conversation:
@@ -45,7 +48,8 @@ def chat_turn(
             if hasattr(body.lms_context, "model_dump")
             else dict(body.lms_context)
         )
-    return generate_turn(
+    started = time.perf_counter()
+    reply = generate_turn(
         db,
         settings=settings,
         conversation=conv,
@@ -54,3 +58,13 @@ def chat_turn(
         current_route=body.current_route,
         lms_context=lms_ctx,
     )
+    elapsed_ms = (time.perf_counter() - started) * 1000
+    logger.info(
+        "[CHAT] turn session=%s route=%s mode=%s source=%s %.0fms",
+        body.session_key[:12],
+        body.current_route or "/",
+        reply.response_mode or "unknown",
+        reply.response_source or reply.response_type or "unknown",
+        elapsed_ms,
+    )
+    return reply

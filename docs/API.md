@@ -1,3 +1,5 @@
+> **Full reference:** see [API_REFERENCE.md](./API_REFERENCE.md) for payloads, examples, and auth notes.
+
 ## SmartEd Support API (FastAPI)
 
 Base URL (Docker Compose behind Nginx): `http://localhost:8080`
@@ -6,7 +8,7 @@ Public endpoints:
 
 | Method | Path | Notes |
 |-------:|------|------|
-| GET | `/health` | Liveness |
+| GET | `/health` | Liveness (`status: healthy`) |
 | POST | `/api/chat/turn` | Stateless-friendly chat turn |
 | WS | `/ws/chat/{session_key}` | Streams assistant reply chunks after generation |
 
